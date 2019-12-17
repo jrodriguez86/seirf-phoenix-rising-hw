@@ -24,3 +24,38 @@
 ////////////
 
 
+
+// const sumArray = (arr) => {
+//     let sum = 0      
+//     for (let i = 0; i < arr.length; i++) {
+//         sum += arr[i] /// didn't include this originally
+//     }
+// return sum
+// }
+// console.log(sumArray([1,2,3,4,5,6]));
+
+// const checkPrime = (num) => {
+//     for(i=0; i < num; i++) {
+//     if (num%i===0);
+//     return false;
+//     }
+//         return true;
+// }
+// console.log(checkPrime(3)); // Keep getting false no matter what number I put in
+
+// Answer //
+// check if a given number is prime
+const checkPrime = (num) => {
+    // loop from 2 to the square root of the number
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+      // if the number is evenly divisible by the current loop
+      if (num % i === 0) {
+        // that means the number is NOT prime, so return false to terminate the loop
+        return false
+      }
+    }
+    // if the for loop never returns false, it's not evenly divisible by any number  from 2 to the square root, so it must be prime
+    return true
+  }
+  
+  console.log(checkPrime(3))
