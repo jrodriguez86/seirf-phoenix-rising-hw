@@ -59,3 +59,13 @@ const checkPrime = (num) => {
   }
   
   console.log(checkPrime(3))
+
+const printPrimes = (limit) => {
+    for (let i = 0; i <= limit; i++) {
+        if(checkPrime(i)) {
+            console.log(i)
+        }
+    }
+}
+
+printPrimes(98);
