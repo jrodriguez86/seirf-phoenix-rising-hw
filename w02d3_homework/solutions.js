@@ -45,27 +45,29 @@
 
 // Answer //
 // check if a given number is prime
-const checkPrime = (num) => {
-    // loop from 2 to the square root of the number
-    for(let i = 2; i <= Math.sqrt(num); i++) {
-      // if the number is evenly divisible by the current loop
-      if (num % i === 0) {
-        // that means the number is NOT prime, so return false to terminate the loop
-        return false
-      }
-    }
-    // if the for loop never returns false, it's not evenly divisible by any number  from 2 to the square root, so it must be prime
-    return true
-  }
+// const checkPrime = (num) => {
+//     // loop from 2 to the square root of the number
+//     for(let i = 2; i <= Math.sqrt(num); i++) {
+//       // if the number is evenly divisible by the current loop
+//       if (num % i === 0) {
+//         // that means the number is NOT prime, so return false to terminate the loop
+//         return false
+//       }
+//     }
+//     // if the for loop never returns false, it's not evenly divisible by any number  from 2 to the square root, so it must be prime
+//     return true
+//   }
   
-  console.log(checkPrime(3))
+//   console.log(checkPrime(3))
 
-const printPrimes = (limit) => {
-    for (let i = 0; i <= limit; i++) {
-        if(checkPrime(i)) {
-            console.log(i)
-        }
-    }
-}
+// const printPrimes = (limit) => {
+//     for (let i = 0; i <= limit; i++) {
+//         if(checkPrime(i)) {
+//             console.log(i)
+//         }
+//     }
+// }
 
-printPrimes(98);
+// printPrimes(98);
+
+

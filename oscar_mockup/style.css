@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+} 
+/* Can't figure out how to send the "logo" to the left. 
+Tried margin-right: auto??? */
+.logo {
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+
+}
+
+.big_box {
+    background-color: blue;
+    width: 100;
+    color: white;
+}
+
+.main_text {
+    font-size: 36px;
+    padding: 50px;
+}
+
+p {
+    font-size: 24px;
+    padding: 50px;
+}
+
+/* Didn't finish
+
+
+
