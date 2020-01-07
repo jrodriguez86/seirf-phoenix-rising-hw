@@ -32,6 +32,7 @@ const player = [
 // Got this part from Deejay... Couldn't figure out how to make for loop start for game
 
 // Still can't get game to start so I'm going to comment out below for the meantime
+
 // let clicker = document.getElementById('agree');
 // ​
 // document.getElementById('agree').addEventListener('click', function(evt) {
@@ -66,5 +67,7 @@ const playerCutScissors = () => {
 // If I comment out the for loops the alerts start how I want
 // Alerts disappear and don't start me off the way I want
 // How do I prompt user to start game with new alert that activates for loop???
+// Also, how do we get the alerts to go to the middle of the page?
+//
 
 
