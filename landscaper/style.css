@@ -1,0 +1,23 @@
+html {
+    background: url(Untitled_design.png);
+    text-align: center;
+    background-size: 100%;
+}
+
+nav {
+    background-color: #dcffcc;
+    display: flex;
+}
+
+h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto:
+}
+
+p {
+    background-color: #9FDFCD;
+    padding: 30px;
+}
