@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -45,8 +46,14 @@ nav {
     display: none;
 }
 
+body {
+    background: url(pineapple.png);
+    background-size: 100%;
+}
+
 @media screen and (max-width: 768px){
     body{
         display: none;
     }
 }
+
