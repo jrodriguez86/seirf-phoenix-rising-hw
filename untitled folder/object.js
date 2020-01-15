@@ -36,21 +36,21 @@ class Person {
         return this.weight
     }
     greet() {
-        console.log('My name is ' + this.name);
+        console.log(`My name is ${this.name}`);
     }
-    eat(i) {
+    eat() {
         this.weight+=i;
         this.mood+=i;
     }
-    exercise(i) {
+    exercise() {
         this.weight-=i;
     }
     
-    ageUp(i) {
-        this.age+=i;
-        this.height+=i;
-        this.weight+=i;
-        this.mood-=i;
+    ageUp() {
+        this.age;
+        this.height++;
+        this.weight++;
+        this.mood++;
         this.bankAccount+=10;
     }
     buyHamster(hamster) {
@@ -61,9 +61,12 @@ class Person {
     }
 }
 
-const Timmy = new Person('Timmy', 5,);
-Timmy.ageUp(5);
-console.log(Timmy);
+const timmy = new Person('Timmy', 5);
+
+console.log(timmy);
+
+timmy.ageUp(5)
+
 
 
 
