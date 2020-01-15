@@ -45,13 +45,14 @@ class Person {
     exercise() {
         this.weight-=i;
     }
-    
+    // Having trouble incrementing by 1 - Have tried several options including throwing i in parameter
+    // Need to add timmy's age or just change it???
     ageUp() {
-        this.age;
-        this.height++;
-        this.weight++;
-        this.mood++;
-        this.bankAccount+=10;
+        this.age += 1;
+        this.height += 1;
+        this.weight += 1;
+        this.mood += 1;
+        this.bankAccount += 10;
     }
     buyHamster(hamster) {
         this.hamsters.push(hamster);
@@ -62,10 +63,14 @@ class Person {
 }
 
 const timmy = new Person('Timmy', 5);
-
+const gus = new Hamster('Gus')
 console.log(timmy);
 
-timmy.ageUp(5)
+timmy.ageUp(5);
+timmy.buyHamster(gus);
+// How do I age Timmy? Age up method isn't working. Need to set a parameter
+timmy.eat(2);
+timmy.exercise(2);
 
 
 
