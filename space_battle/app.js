@@ -98,14 +98,15 @@ let gameState = {
 // START the game
 console.log("Generating enemy ships");
 enemy = new Alienship();
+let enemies = [];
 console.log(enemy);
 
 // TODO: update to array of 6 enemy ships
 // enemies = [];
 
-// for (let i=0; i < 6; i+=1) {
-//     enemies.push(new Alienship());
-// }
+for (let i=0; i < 6; i+=1) {
+    enemies.push(new Alienship());
+}
 
 while (gameState.playerIsAlive) {
 
@@ -116,6 +117,7 @@ ussSchwarzenegger.attack(enemy);
 if (enemy.hull <= 0) {
     // If enemy ship is destroyed:
     console.log("Enemy ship destroyed");
+    
 
     // Ask user if they want to continue attacking or retreat:
     let response = prompt("Ship Destroyed, attack or retreat?"); // Prompt and Alert only works in browser console
@@ -134,7 +136,9 @@ console.log("Continuing gameplay");
     // Enemy ship attacks
   enemy.attack();
 }
- }
+ } if (enemy.hull <= 0) {
+    // If enemy ship is destroyed:
+    enemies.shift();
 
 // End game logic
 
@@ -142,7 +146,9 @@ console.log("Continuing gameplay");
 
 console.log("Game over");
 }
-
-// Next steps - detect if the alient ship is destroyed, needs to move to next ship
+// Keep destroying ships and not stopping at 6
+// Need to signal game over.
+// 
 //            - 
+}
 }
