@@ -1,5 +1,13 @@
 body {background-color: #F8F7FF}/*or any color of your choosing*/
 
+body {
+    text-align: center;
+}
+
 .Owl {
     font-family: fantasy;
+}
+
+.secret {
+    opacity: 0.5;
 }
