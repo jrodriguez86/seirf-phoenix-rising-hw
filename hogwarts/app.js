@@ -11,6 +11,20 @@ $(() => {
 
 console.log($container);
 
+const $h1 = $("<h1>").text("Hogwarts");
+
+
+
+const $h2 = $("<h2>").text("Jose");
+
+const $h3 = $("<h3>").text("Hufflepuff");
+
+const $h4 = $("<h4>").text("Wade");
+
+$h4.addClass("Owl");
+
+
+
 
 
 
