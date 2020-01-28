@@ -6,7 +6,8 @@ const $toDoList = $("#to-do-list");
 const render = () =>{
   $("ul").empty();
   list.forEach((item)=>{
-    $("ul").append("<li>" + item + "</li>")
+    $("#to-do-list").append("<li>" + item + "</li>")
+    // how to apply the CSS portion to the ID to do list
   });
 }
 
@@ -27,5 +28,6 @@ const handleSubmit = (event) => {
 
     
   $("form").on("submit", handleSubmit)
+  $("button").on("click", handleSubmit)
   
 });
