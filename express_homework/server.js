@@ -22,4 +22,6 @@ app.get("/magic/:id", (req, res) => {
         </html>)
 });// Why are my tags not appearing....
 
-app.listen(3000);
+app.listen(3000,() => {
+    console.log('listening on port' , port);
+});
