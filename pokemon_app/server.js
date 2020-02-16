@@ -5,6 +5,12 @@ const pokemon = require('./models/pokemon.js');
 
 
 
+
+app.get("/pokemon/:id", (req, res) => {
+    res.send(req.params.id);
+})
+
+
 app.get("/pokemon", (req, res) => {
     res.render("index.ejs", {pokemon: pokemon});
 })
