@@ -7,6 +7,23 @@ const port = 3000;
 const budget = require('./models/budget.js');
 
 
+app.use(express.urlencoded({extended:false}))
+
+
+app.get("/budget/new", (req, res) => {
+    res.render("new.ejs");
+})
+
+app.post("/budget", (req, res) => {
+    console.log("body", req.body);
+    let budgets = {}
+    budgets.date = req.body.date
+    budgets.name = req.body.name
+    budgets.number = req.body.number
+    budgets.from = req.body.from
+    budget.push(budgets);
+    res.redirect("/budget");
+})
 
 app.get("/budget/:id", (req, res) => {
     res.render("show.ejs", {budget: budget[req.params.id]});
