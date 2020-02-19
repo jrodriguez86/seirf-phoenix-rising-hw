@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/normalize.css">
-<link rel="stylesheet" href="/skeleton.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+<title>Show Page</title>
+    
 </head>
 <body>
+    <div class="container">
+        <h1><%= budget.name %></h1>
+        <a href="../budget"><button>Back</button></a>
+        <h4>date</h4>
+        <p><%=budget.date %></p>
+        <h4>name</h4>
+        <p><%=budget.name %></p>
+        <h4>from</h4>
+        <p><%=budget.from %></p>
+        <h4>amount</h4>
+        <p><%=budget.amount %></p>
+        <h4>tags</h4>
+        <p><%=budget.tags %></p>
+    </div>
     
 </body>
 </html>
