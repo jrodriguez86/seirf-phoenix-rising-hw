@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Pokemon, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Pokemon</title>
+</head>
+<body>
+    
+    <h1><%= data.name %></h1>
+<ul>
+  <% for (let type of data.type) { %>
+  <li><%= type %></li>
+  <% } %>
+</ul>
+<img src="<%= data.img %>" alt="picture of pokemon" width="200px">
+<h2>Stats:</h2>
+<p>HP: <%= data.stats.hp %></p>
+<p>Attack: <%= data.stats.attack %></p>
+<p>Defense: <%= data.stats.defense %></p>
+
+
+</body>
+</html>
