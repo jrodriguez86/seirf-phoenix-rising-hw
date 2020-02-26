@@ -1,7 +1,7 @@
 // Load express:
 const express = require("express");
 const app = express();
-const bootstrap = require('bootstrap');
+// const bootstrap = require('bootstrap');
 // const jQuery =
 
 // Set the web server port:
@@ -22,12 +22,18 @@ app.get("/pokedex/new", (req, res) => {
     res.render("new.ejs");
 })
 
+
+
 // EDIT
 app.get("/pokedex/:id/:edit", (req, res) => {
-    res.render("edit.ejs", {
-
-    })
+    res.render("edit.ejs", {data: Pokemon[req.params.id]})
 })
+
+// // delete route
+// app.delete("/pokedex", (req, res) => {
+//     pokemon.splice(req.params.index, 1);
+//     res.redirect('/pokedex');
+//   })  
 
 // SHOW
 app.get("/pokedex/:id", (req, res) => {
