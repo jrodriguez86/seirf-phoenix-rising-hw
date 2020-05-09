@@ -17,6 +17,12 @@ class TweetsController < ApplicationController
         else
           render(status: 422, json: { tweet: tweet, errors: tweet.errors })
         end
+        
+        def update
+        end
+
+        def destroy
+        end
       end
 end
 
